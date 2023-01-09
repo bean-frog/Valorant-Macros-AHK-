@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valorant AutoHotKey Macros</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css" integrity="sha512-Ef5r/bdKQ7JAmVBbTgivSgg3RM+SLRjwU0cAgySwTSv4+jYcVeDukMp+9lZGWT78T4vCUxgT3g+E8t7uabwRuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.5/marked.min.js" integrity="sha512-5JZDwulT+S/K8p/KO4tikNKA5t6Ebb+tqPwT7Ma+lVpJuS4G+Z0lSktWcl8hymXeFqCprGEuKGOCrKjyulql/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><body class="w3-dark-gray w3-center">
+    <h1>Valorant AutoHotkey Macros</h1>
+    <h2>Some useful macros for Valorant, coded using AutoHotkey.</h2>
+    <div id="instructionsMD"></div>
+    
+    
+
+<div id="main" style="display:none">
+<div class="w3-center">
+      <form class="checkboxes">
+        <input type="checkbox" id="instalockSova" value="instalockSova"> Instalock Sova<br>
+        <input type="checkbox" id="vandalHeavyMacro" value="vandalHeavyMacro"> Purchase Vandal and Heavy Shields<br>
+        <input type="checkbox" id="GGMacro" value="GGMacro"> Quick GG<br>
+      </form> 
+    </div>
+  
+  <br>
+  <button onclick="appendStrings()">Generate Script</button>
+  <br><br>
+  <div class="output-wrapper w3-border-black w3-leftbar">
+      <code class="output w3-left" id="code"></code>
+  </div>
+</div>
+    
+  
+</body>
+<script src="script.js"></script>
+</html>

@@ -15,3 +15,4 @@ open Valorant and go to a custom game and hover over the agent, then check your 
 
 ![Example](https://raw.githubusercontent.com/bean-frog/Valorant-Macros-AHK-/main/image_2023-01-09_115628519.png)
 #### This example code instalocks Sova, to change it or calibrate it, set the first coordinates to whatever your Python script outputs when hovering over. Set the second set of coordinates to the choose agent button.
+## Pro tip: if you have a StreamDeck or other macropad, bind the hotkeys in the script to it

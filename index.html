@@ -7,31 +7,49 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.5/marked.min.js" integrity="sha512-5JZDwulT+S/K8p/KO4tikNKA5t6Ebb+tqPwT7Ma+lVpJuS4G+Z0lSktWcl8hymXeFqCprGEuKGOCrKjyulql/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><body class="w3-dark-gray w3-center">
+<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="ahk.js"></script>
     <h1>Valorant AutoHotkey Macros</h1>
     <h2>Some useful macros for Valorant, coded using AutoHotkey.</h2>
-    <div id="instructionsMD"></div>
-    
+   
     
 
-<div id="main" style="display:none">
-<div class="w3-center">
+<div id="main">
       <form class="checkboxes">
-        <input type="checkbox" id="instalockSova" value="instalockSova"> Instalock Sova<br>
+        <input type="checkbox" id="instalockSova" value="string1"> Instalock Sova<br>
+        <input type="checkbox" id="instaJett" value="string2"> Instalock Jett<br>
+        <input type="checkbox" id="instaSage" value="instaSage"> Instalock Sage<br>
+        <input type="checkbox" id="instaSkye" value="instaSkye"> Instalock Skye<br>
+        <input type="checkbox" id="instaHarbor" value="instaHarbor"> Instalock Harbor<br>
+        <input type="checkbox" id="instaChamber" value="instaChamber"> Instalock Chamber<br>
+        <input type="checkbox" id="instaRaze" value="instaRaze"> Instalock Raze<br>
+        <input type="checkbox" id="instaPhoenix" value="instaPhoenix"> Instalock Phoenix<br>
+        <input type="checkbox" id="instaOmen" value="instaOmen"> Instalock Omen<br>
+        <input type="checkbox" id="instaReyna" value="instaReyna"> Instalock Reyna<br>
+        <input type="checkbox" id="instaNeon" value="instaNeon"> Instalock Neon<br>
+        <input type="checkbox" id="instaBreach" value="instaBreach"> Instalock Breach<br>
+        <input type="checkbox" id="instaBrimstone" value="instaBrimstone"> Instalock Brimstone<br>
+        <input type="checkbox" id="instaAstra" value="instaAstra"> Instalock Astra<br>
+        <input type="checkbox" id="instaKilljoy" value="instaKilljoy"> Instalock Killjoy<br>
+        <input type="checkbox" id="instaViper" value="instaViper"> Instalock Viper<br>
+        <input type="checkbox" id="instaYoru" value="instaYoru"> Instalock Yoru<br>
+        <input type="checkbox" id="instaKayo" value="instaKayo"> Instalock Kayo<br>
+        <input type="checkbox" id="instaCypher" value="instaCypher"> Instalock Cypher<br>
+        <input type="checkbox" id="instaFade" value="instaFade"> Instalock Fade<br>
+
         <input type="checkbox" id="vandalHeavyMacro" value="vandalHeavyMacro"> Purchase Vandal and Heavy Shields<br>
         <input type="checkbox" id="GGMacro" value="GGMacro"> Quick GG<br>
       </form> 
-    </div>
-  
   <br>
-  <button onclick="appendStrings()">Generate Script</button>
+  <button id="append-button">Generate Script</button>
   <br><br>
   <div class="output-wrapper w3-border-black w3-leftbar">
-      <code class="output w3-left" id="code"></code>
+      <code class="output" id="output"></code>
   </div>
 </div>
     
   
 </body>
-<script src="script.js"></script>
+<script src="app.js"></script>
 </html>

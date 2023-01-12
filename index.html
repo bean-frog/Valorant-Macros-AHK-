@@ -1,54 +1,93 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Valorant AutoHotKey Macros</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css" integrity="sha512-Ef5r/bdKQ7JAmVBbTgivSgg3RM+SLRjwU0cAgySwTSv4+jYcVeDukMp+9lZGWT78T4vCUxgT3g+E8t7uabwRuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="ahk.js"></script>
-    <h1>Valorant AutoHotkey Macros</h1>
-    <h2>Some useful macros for Valorant, coded using AutoHotkey.</h2>
-   
-    
+    <title>Valorant AutoHotKey Macros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css" integrity="sha512-Ef5r/bdKQ7JAmVBbTgivSgg3RM+SLRjwU0cAgySwTSv4+jYcVeDukMp+9lZGWT78T4vCUxgT3g+E8t7uabwRuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="ahk.js"></script>
+</head>
 
-<div id="main">
-      <form class="checkboxes">
-        <input type="checkbox" id="instalockSova" value="string1"> Instalock Sova<br>
-        <input type="checkbox" id="instaJett" value="string2"> Instalock Jett<br>
-        <input type="checkbox" id="instaSage" value="instaSage"> Instalock Sage<br>
-        <input type="checkbox" id="instaSkye" value="instaSkye"> Instalock Skye<br>
-        <input type="checkbox" id="instaHarbor" value="instaHarbor"> Instalock Harbor<br>
-        <input type="checkbox" id="instaChamber" value="instaChamber"> Instalock Chamber<br>
-        <input type="checkbox" id="instaRaze" value="instaRaze"> Instalock Raze<br>
-        <input type="checkbox" id="instaPhoenix" value="instaPhoenix"> Instalock Phoenix<br>
-        <input type="checkbox" id="instaOmen" value="instaOmen"> Instalock Omen<br>
-        <input type="checkbox" id="instaReyna" value="instaReyna"> Instalock Reyna<br>
-        <input type="checkbox" id="instaNeon" value="instaNeon"> Instalock Neon<br>
-        <input type="checkbox" id="instaBreach" value="instaBreach"> Instalock Breach<br>
-        <input type="checkbox" id="instaBrimstone" value="instaBrimstone"> Instalock Brimstone<br>
-        <input type="checkbox" id="instaAstra" value="instaAstra"> Instalock Astra<br>
-        <input type="checkbox" id="instaKilljoy" value="instaKilljoy"> Instalock Killjoy<br>
-        <input type="checkbox" id="instaViper" value="instaViper"> Instalock Viper<br>
-        <input type="checkbox" id="instaYoru" value="instaYoru"> Instalock Yoru<br>
-        <input type="checkbox" id="instaKayo" value="instaKayo"> Instalock Kayo<br>
-        <input type="checkbox" id="instaCypher" value="instaCypher"> Instalock Cypher<br>
-        <input type="checkbox" id="instaFade" value="instaFade"> Instalock Fade<br>
+<body class="w3-dark-gray">
+    <h1 id="title" class="w3-center w3-xxxlarge">ValorAnt AutoHotkey MAcros</h1>
+    <h2 class="w3-center">add desc later</h2>
 
-        <input type="checkbox" id="vandalHeavyMacro" value="vandalHeavyMacro"> Purchase Vandal and Heavy Shields<br>
-        <input type="checkbox" id="GGMacro" value="GGMacro"> Quick GG<br>
-      </form> 
-  <br>
-  <button id="append-button">Generate Script</button>
-  <br><br>
-  <div class="output-wrapper w3-border-black w3-leftbar">
-      <code class="output" id="output"></code>
+
+    <div class="w3-row">
+        <div class="w3-col l6 m6 testCard">
+            <h4>Non-Toggling Macros</h4>
+            <h5 class="w3-border-red w3-bottombar">These macros do not require toggling (to avoid suspicion). They can be combined into one script with the button below.</h5>
+            <form class="checkboxes w3-col m4 l4">
+                <input type="checkbox" id="instalockSova" value="string1"> Instalock Sova<br>
+                <input type="checkbox" id="instaJett" value="string2"> Instalock Jett<br>
+                <input type="checkbox" id="instaSage" value="string3"> Instalock Sage<br>
+                <input type="checkbox" id="instaSkye" value="string4"> Instalock Skye<br>
+                <input type="checkbox" id="instaHarbor" value="string5"> Instalock Harbor<br>
+                <input type="checkbox" id="instaChamber" value="string6"> Instalock Chamber<br>
+                <input type="checkbox" id="instaRaze" value="string7"> Instalock Raze<br>
+                <input type="checkbox" id="instaPhoenix" value="string8"> Instalock Phoenix<br>
+                <input type="checkbox" id="instaOmen" value="string9"> Instalock Omen<br>
+                <input type="checkbox" id="instaReyna" value="string10"> Instalock Reyna<br>
+            </form>
+            <form class="checkboxes w3-col m4 l4">
+                <input type="checkbox" id="instaNeon" value="string11"> Instalock Neon<br>
+                <input type="checkbox" id="instaBreach" value="string12"> Instalock Breach<br>
+                <input type="checkbox" id="instaBrimstone" value="string13"> Instalock Brimstone<br>
+                <input type="checkbox" id="instaAstra" value="string14"> Instalock Astra<br>
+                <input type="checkbox" id="instaKilljoy" value="string15"> Instalock Killjoy<br>
+                <input type="checkbox" id="instaViper" value="string16"> Instalock Viper<br>
+                <input type="checkbox" id="instaYoru" value="string17"> Instalock Yoru<br>
+                <input type="checkbox" id="instaKayo" value="string18"> Instalock Kayo<br>
+                <input type="checkbox" id="instaCypher" value="string19"> Instalock Cypher<br>
+                <input type="checkbox" id="instaFade" value="string20"> Instalock Fade<br>
+            </form>
+
+            <form class="checkboxes w3-col m4 l4">
+                <input type="checkbox" id="vandalHeavyMacro" value="vandalHeavyMacro"> Purchase Vandal and Heavy Shields<br>
+                <input type="checkbox" id="phantomHeavyMacro" value="phantomHeavyMacro"> Purchase Phantom and Heavy Shields<br>
+                <input type="checkbox" id="fullUtil" value="fullUtil"> Purchase all utility<br>
+                <input type="checkbox" id="oneEachUtil" value="oneEachUtil"> Purchase one of each type of utility<br>
+                <input type="checkbox" id="GGMacro" value="GGMacro"> Quick GG<br>
+                <input type="checkbox" id="EZMacro" value="EZMacro"> Quick EZ<br>
+            </form>
+            <br>
+            <div class="w3-row">
+				<div class="w3-col m12 l12 w3-center">
+                <button id="append-button">Generate Script</button>
+                <br><br>
+                <div class="output-wrapper w3-border-black w3-leftbar" style="text-align: left">
+                    <code class="output" id="output" style="text-align: left"></code>
+                </div>
+            </div>
+			</div>
+
+        </div>
+
+        <div class="w3-col l6 m6 testCard">
+            <h4>Toggled Macros</h4>
+            <h5 class="w3-border-red w3-bottombar">These macros probably need to be toggled to avoid suspicion. Run them in separate scripts.</h5>
+			<button id="bhop" class="w3-center btn-main">Bhop</button>
+			<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-center" style="background-color: transparent">
+      <div class="w3-container">
+        <span id="closebhop" onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <div class="output-wrapper w3-border-black w3-leftbar">
+                <code class="output" id="output">
+					add thing here
+				</code>
+                </div>
+      </div>
+    </div>
   </div>
-</div>
-    
+        </div>
+    </div>
+
 </body>
 <script src="app.js"></script>
+
 </html>

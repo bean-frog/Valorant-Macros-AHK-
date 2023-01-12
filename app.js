@@ -1,4 +1,4 @@
-//This ex works, fill in the rest
+
 let strings = {
     string1: instaSova,
     string2: instaJett,
@@ -29,3 +29,9 @@ $('#append-button').on('click', function() {
     });
     $('#output').append(selectedString);
 });
+
+let bhop =  document.getElementById("bhop");
+bhop.addEventListener('click', showModal);
+function showModal() {
+	document.getElementById('id01').style.display='block'
+}

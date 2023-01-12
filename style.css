@@ -26,3 +26,24 @@
     display: flex;
      justify-content: center;
  }
+ .testCard {
+	 background-color: #242526;
+	 height: auto;
+	 width: calc(50% - 1px);
+	 border: 2px solid red;
+ }
+ .btn-main {
+	padding: 3px;
+	color: white;
+	background-color: #616161;
+	border: 2px solid #dc3d4b;
+ }
+
+ @font-face {
+	 font-family: Valorant;
+	 src: url(valorant.ttf);
+ }
+ #title {
+	 font-family: "Valorant";
+	 color: #dc3d4b
+ }

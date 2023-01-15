@@ -20,6 +20,7 @@ let strings = {
 	string18: instaKayo,
 	string19: instaCypher,
 	string20: instaFade,
+    string21: vandalHeavy,
 };
 $('#append-button').on('click', function() {
     $('#output').empty(); // clear the contents of the "output" div
@@ -35,3 +36,44 @@ bhop.addEventListener('click', showModal);
 function showModal() {
 	document.getElementById('id01').style.display='block'
 }
+
+const copyButton = document.querySelector('#copyButton');
+const codeCopy = document.querySelector('#output');
+
+
+copyButton.addEventListener('click', async function() {
+    if(codeCopy.innerText.length == 0) {
+        alert("Nothing Generated! Select some checkboxes and press 'Generate Script' first.");
+    } else {
+
+  try {
+    await navigator.clipboard.writeText(codeCopy.innerText);
+    alert("Script copied! Paste into a new AHK document.");
+  } catch (err) {
+    console.error('Failed to copy text: ', err);
+  }
+}
+});
+const copyBhop = document.querySelector("#bhop");
+const bhopCopy = `
+F1::                 
+	Suspend
+	Return
+*space::
+	Loop                                                                                                                
+	{
+		GetKeyState,state,space,P
+		If state = U
+			Break
+		Send,{space}              
+		Sleep,20
+	}  
+`
+copyBhop.addEventListener('click', async function() {
+  try {
+    await navigator.clipboard.writeText(bhopCopy.innerText);
+    alert("Script copied! Paste into a new AHK document.");
+  } catch (err) {
+    console.error('Failed to copy text: ', err);
+  }
+});

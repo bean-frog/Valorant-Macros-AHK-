@@ -48,19 +48,22 @@
             </form>
 
             <form class="checkboxes w3-col m4 l4">
-                <input type="checkbox" id="vandalHeavyMacro" value="vandalHeavyMacro"> Purchase Vandal and Heavy Shields<br>
-                <input type="checkbox" id="phantomHeavyMacro" value="phantomHeavyMacro"> Purchase Phantom and Heavy Shields<br>
-                <input type="checkbox" id="fullUtil" value="fullUtil"> Purchase all utility<br>
-                <input type="checkbox" id="oneEachUtil" value="oneEachUtil"> Purchase one of each type of utility<br>
-                <input type="checkbox" id="GGMacro" value="GGMacro"> Quick GG<br>
-                <input type="checkbox" id="EZMacro" value="EZMacro"> Quick EZ<br>
+                <input class="disabledBox"type="checkbox" id="vandalHeavy" value="vandalHeavy" disabled> Purchase Vandal and Heavy Shields<br>
+                <input class="disabledBox"type="checkbox" id="phantomHeavyMacro" value="phantomHeavyMacro" disabled> Purchase Phantom and Heavy Shields<br>
+                <input class="disabledBox"type="checkbox" id="fullUtil" value="fullUtil" disabled>Purchase all utility<br>
+                <input class="disabledBox"type="checkbox" id="oneEachUtil" value="oneEachUtil" disabled> Purchase one of each type of utility<br>
+                <input class="disabledBox"type="checkbox" id="GGMacro" value="GGMacro" disabled> Quick GG<br>
+                <input class="disabledBox"type="checkbox" id="EZMacro" value="EZMacro" disabled> Quick EZ<br>
             </form>
             <br>
             <div class="w3-row">
 				<div class="w3-col m12 l12 w3-center">
                 <button id="append-button">Generate Script</button>
-                <br><br>
+                <br>
+                <button id="copyButton">Copy Script</button>
+                <br> 
                 <div class="output-wrapper w3-border-black w3-leftbar" style="text-align: left">
+                  
                     <code class="output" id="output" style="text-align: left"></code>
                 </div>
             </div>
@@ -72,18 +75,6 @@
             <h4>Toggled Macros</h4>
             <h5 class="w3-border-red w3-bottombar">These macros probably need to be toggled to avoid suspicion. Run them in separate scripts.</h5>
 			<button id="bhop" class="w3-center btn-main">Bhop</button>
-			<div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-center" style="background-color: transparent">
-      <div class="w3-container">
-        <span id="closebhop" onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        <div class="output-wrapper w3-border-black w3-leftbar">
-                <code class="output" id="output">
-					add thing here
-				</code>
-                </div>
-      </div>
-    </div>
-  </div>
         </div>
     </div>
 

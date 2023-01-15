@@ -37,6 +37,7 @@
 	color: white;
 	background-color: #616161;
 	border: 2px solid #dc3d4b;
+    margin: 5px
  }
 
  @font-face {
@@ -47,3 +48,7 @@
 	 font-family: "Valorant";
 	 color: #dc3d4b
  }
+.disabledBox {
+    opacity: 0.6;
+    color: #616161
+}
